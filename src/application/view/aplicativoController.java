@@ -43,27 +43,8 @@ public class aplicativoController {
     }
 
     @FXML
-    private void initialize() {
-    	subtrair.setOnAction(e->{Subtrair();});
-		multiplicar.setOnAction(e->{Multiplicar();});
-		divisao.setOnAction(e->{Divisao();});
-		btnReset.setOnAction(e->{
-			txtNumero1.setText("0");
-			txtNumero2.setText("0");
-			btnResultado.setText("?");
-		});
-		}
-    }
-		txtNumero1.textProperty().addListener()
-		(observable, oldValue, newValue) ->{
-		txtNumero1.setText(newValue,replaceAll("[^\\d]",""));
-		));
-		
-		txtNumero2.textProperty().addListener()
-		(observable, oldValue, newValue) ->{
-		txtNumero2.setText(newValue,replaceAll("[^\\d]",""));
-		));
-    }
-}
-		
+	private void initialize() {
+		//abrirPaginaInicial();
+	}
+    
 }

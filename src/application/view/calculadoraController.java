@@ -30,7 +30,42 @@ package application.view;
 		    @FXML
 		    private TextField txtNumero2;
 
-		
+		    private void initialize() {
+		    /*
+	    	iniciar programa com valores zerados */
+	    	txtNumero1.setText("0");
+			txtNumero2.setText("0");
+	    	
+	    	/* O setOnAction aciona o evento do componente
+	    	por exemplo: o click no botão
+	    	ou o enter em um text field */
+	    	
+	    	subtrair.setOnAction(e->{Subtrair();});
+	    	multiplicar.setOnAction(e->{Multiplicar();});
+	    	dividir.setOnAction(e->{Dividir();});
+	    	resetar.setOnAction(e->{
+	    		txtNumero1.setText("0");
+	    		txtNumero2.setText("0");
+	    		btnResultado.setText("Resultado:");    		
+	    	});
+	    	
+
+	    	/*adicionar um escutador de evento no 
+	    	text field de numero 1
+	    	ao digitar dentro do text fiel ele vai trocar a letra
+	    	 por uma informação vazia atravez do replaceAll*/
+	    	txtNumero1.textProperty().addListener(
+	    	(observable, oldValue, newValue)->{
+	    	txtNumero1.setText(newValue.replaceAll("[^\\d.]",""));	
+	    	});
+	    	
+	    	txtNumero2.textProperty().addListener(
+	    	(observable, oldValue, newValue)->{
+	    	 txtNumero2.setText(newValue.replaceAll("[^\\d.]",""));	
+	    	 });
+	    
+	    }
+		    
 		public void Somar() {
 			double numero1;
 			double numero2;
@@ -42,7 +77,7 @@ package application.view;
 			}
 			
 			try {
-				numero2 = Double.valueOf(txtNumero2.getText());
+				numero2 = Double.valueOf(txtNumero2.getText()); // utiliza o getText para retornar a informação digitada 
 				} catch(Exception e) {
 					numero2 = 0;
 					txtNumero2.setText("0");
@@ -50,17 +85,21 @@ package application.view;
 			
 			double resultado = numero1+numero2;
 			
+			// retorna o valor de double para string
+	    	//informa o resultado na label com o setText
 			btnResultado.setText(String.valueOf(resultado));
 		}
 		
 		public void Subtrair() {
-			double numero1 = StrToDbl(txtNumero1.getText());
-			double numero2 = StrToDbl(txtNumero2.getText());
+			double numero1 = StrToDbl(txtNumero1.getText()); // utiliza o getText para retornar a informação digitada 
+			double numero2 = StrToDbl(txtNumero2.getText()); //converte o tipo de texto para double
 			txtNumero1.setText(String.valueOf(numero1));
 			txtNumero2.setText(String.valueOf(numero2));
 			
 			double resultado = numero1-numero2;
 			
+			// retorna o valor de double para string
+	    	//informa o resultado na label com o setText
 			btnResultado.setText(String.valueOf(resultado));
 		}
 		
@@ -85,5 +124,5 @@ package application.view;
 			}catch (Expection e) {
 			return 0;	
 			}
-			}
 		}
+	}

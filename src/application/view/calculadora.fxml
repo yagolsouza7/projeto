@@ -37,6 +37,6 @@
             <Font name="System Bold" size="35.0" />
          </font>
       </Text>
-      <Button fx:id="resetar" layoutX="152.0" layoutY="393.0" mnemonicParsing="false" text="Resetar" />
+      <Button fx:id="resetar" layoutX="152.0" layoutY="393.0" mnemonicParsing="false" onAction="#initialize" text="Resetar" />
    </children>
 </AnchorPane>
