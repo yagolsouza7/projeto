@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="conteudoPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.aplicativoController">
+   <children>
+      <ImageView fitHeight="606.0" fitWidth="368.0" layoutX="-6.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../../Downloads/fries-ate-fries.gif" />
+         </image>
+      </ImageView>
+      <Button layoutX="61.0" layoutY="92.0" mnemonicParsing="false" onAction="#abrirCalculadora" prefHeight="26.0" prefWidth="257.0" text="CALCULADORA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
