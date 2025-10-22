@@ -13,22 +13,27 @@
             <Image url="@../../../../../Downloads/fries-ate-fries.gif" />
          </image>
       </ImageView>
-      <Button layoutX="61.0" layoutY="72.0" mnemonicParsing="false" onAction="#abrirCalculadora" prefHeight="26.0" prefWidth="257.0" text="CALCULADORA">
+      <Button layoutX="60.0" layoutY="50.0" mnemonicParsing="false" onAction="#abrirCalculadora" prefHeight="26.0" prefWidth="257.0" text="CALCULADORA">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="60.0" layoutY="143.0" mnemonicParsing="false" onAction="#abrirCalculadoraIMC" prefHeight="26.0" prefWidth="258.0" text="CALCULADORA DE IMC">
+      <Button layoutX="59.0" layoutY="105.0" mnemonicParsing="false" onAction="#abrirCalculadoraIMC" prefHeight="26.0" prefWidth="258.0" text="CALCULAR IMC">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="61.0" layoutY="217.0" mnemonicParsing="false" onAction="#abrirGame" prefHeight="26.0" prefWidth="258.0" text="JOGO">
+      <Button layoutX="60.0" layoutY="220.0" mnemonicParsing="false" onAction="#abrirGame" prefHeight="26.0" prefWidth="258.0" text="JOGO">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </Button>
-      <Button layoutX="61.0" layoutY="289.0" mnemonicParsing="false" onAction="#abrirGameCarro" prefHeight="26.0" prefWidth="258.0" text="TOP GEAR">
+      <Button layoutX="60.0" layoutY="275.0" mnemonicParsing="false" onAction="#abrirMedia" prefHeight="26.0" prefWidth="258.0" text="MÉDIA DE NOTAS">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="60.0" layoutY="166.0" mnemonicParsing="false" onAction="#abrircontadorDeIdade" prefHeight="26.0" prefWidth="258.0" text="DETERMINADOR DE IDADE">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

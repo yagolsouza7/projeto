@@ -31,5 +31,10 @@
       <TextField fx:id="usuario" layoutX="84.0" layoutY="204.0" promptText="Insira o usuário" />
     <Button fx:id="entrar" layoutX="125.0" layoutY="378.0" mnemonicParsing="false" onAction="#entrar" text="Entrar" />
     <Button fx:id="sair" layoutX="238.0" layoutY="378.0" mnemonicParsing="false" onAction="#sair" text="Sair" />
+      <Label fx:id="lblNovoUsuario" layoutX="152.0" layoutY="440.0" text="Criar Conta" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

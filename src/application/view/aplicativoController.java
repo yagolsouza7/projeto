@@ -55,8 +55,13 @@ public class aplicativoController {
     }
     
     @FXML
-    private void abrirGameCarro() {
-    	carregarTela("jogoCarro.fxml");
+    private void abrirMedia() {
+    	carregarTela("mediadenotas.fxml");
+    }
+    
+    @FXML
+    private void abrircontadorDeIdade() {
+    	carregarTela("contadorDeIdade.fxml");
     }
     
 	@FXML

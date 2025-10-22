@@ -1,10 +1,12 @@
 package application.view;
 
+import application.dao.usuarioDAO;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -16,6 +18,9 @@ public class loginController {
 
     @FXML
     private TextField usuario;
+    
+    @FXML
+    private Label lblNovoUsuario;
 
     @FXML
     private void sair() {
@@ -27,9 +32,11 @@ public class loginController {
     	try {
             String user = usuario.getText();
             String pass = senha.getText();
+            usuarioDAO dao = new usuarioDAO();
 
-            if ("admin".equals(user) && "admin".equals(pass)) {
-                Alert aviso = new Alert(Alert.AlertType.CONFIRMATION);
+            if (dao.autenticar(user, pass)) {
+            	Alert aviso;
+              aviso = new Alert(Alert.AlertType.CONFIRMATION);
                 aviso.setTitle("Confirmação");
                 aviso.setHeaderText(null);
                 aviso.setContentText("Bem-vindo ao sistema " + user);
@@ -68,5 +75,17 @@ public class loginController {
     
     senha.setOnAction(e->{entrar();});
     
-    }
-    }
+    lblNovoUsuario.setOnMouseClicked(event->{
+		try {
+			//ABRE A TELA CADASTRO USUARIO
+			Parent root = FXMLLoader.load(getClass().getResource("usuario.fxml"));
+			Stage stage = new Stage();
+			Scene scene = new Scene(root);
+			stage.setScene(scene);
+			stage.show();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	});
+}
+}
