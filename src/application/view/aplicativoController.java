@@ -46,7 +46,7 @@ public class aplicativoController {
     
     @FXML
     private void abrirCalculadoraIMC() {
-    	carregarTela("calcularIMC.fxml");
+    	carregarTela("calculadoraIMC.fxml");
     }
 	
     @FXML

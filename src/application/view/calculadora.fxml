@@ -27,7 +27,7 @@
             <Font name="System Bold" size="35.0" />
          </font>
       </Text>
-      <Label fx:id="btnResultado" layoutX="173.0" layoutY="481.0" text="?" textFill="#f20000">
+      <Label fx:id="btnResultado" layoutX="104.0" layoutY="479.0" text="?" textFill="#f20000">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>

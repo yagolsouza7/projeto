@@ -95,6 +95,15 @@ public class calculadoraController {
 
         double resultado = numero1 - numero2;
         btnResultado.setText(String.valueOf(resultado));
+        
+        String parOuImpar;
+        if (resultado % 2 == 0) {
+            parOuImpar = " É par.";
+        } else {
+            parOuImpar = " É ímpar.";
+        }
+
+        btnResultado.setText("Resultado: "+String.valueOf(resultado)+parOuImpar);
     }
 
     public void Multiplicar() {
@@ -103,7 +112,17 @@ public class calculadoraController {
         double resultado = numero1 * numero2;
 
         btnResultado.setText(String.valueOf(resultado));
+        
+        String parOuImpar;
+        if (resultado % 2 == 0) {
+            parOuImpar = " É par.";
+        } else {
+            parOuImpar = " É ímpar.";
+        }
+
+        btnResultado.setText("Resultado: "+String.valueOf(resultado)+parOuImpar);
     }
+
 
     public void Dividir() {
         double numero1 = Double.valueOf(txtNumero1.getText());
@@ -111,7 +130,17 @@ public class calculadoraController {
         double resultado = numero1 / numero2;
 
         btnResultado.setText(String.valueOf(resultado));
+        
+        String parOuImpar;
+        if (resultado % 2 == 0) {
+            parOuImpar = " É par.";
+        } else {
+            parOuImpar = " É ímpar.";
+        }
+
+        btnResultado.setText("Resultado: "+String.valueOf(resultado)+parOuImpar);
     }
+
 
     public static double StrToDbl(String numero) {
         try {

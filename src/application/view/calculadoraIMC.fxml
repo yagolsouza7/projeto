@@ -14,30 +14,30 @@
             <Font name="System Bold" size="27.0" />
          </font>
       </Text>
-      <Text layoutX="54.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Altura">
+      <Text layoutX="54.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Altura">
          <font>
             <Font size="17.0" />
          </font>
       </Text>
-      <Text layoutX="59.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peso">
+      <Text layoutX="59.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peso">
          <font>
             <Font size="17.0" />
          </font>
       </Text>
-      <TextField fx:id="txtAltura" layoutX="60.0" layoutY="261.0" promptText="Insira a sua altura" />
-      <TextField fx:id="txtPeso" layoutX="60.0" layoutY="358.0" promptText="Insira o seu peso" />
-      <TextField fx:id="txtNome" layoutX="60.0" layoutY="172.0" promptText="Insira o seu nome" />
-      <Text layoutX="60.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+      <TextField fx:id="txtAltura" layoutX="60.0" layoutY="231.0" promptText="Insira a sua altura" />
+      <TextField fx:id="txtPeso" layoutX="60.0" layoutY="318.0" promptText="Insira o seu peso" />
+      <TextField fx:id="txtNome" layoutX="60.0" layoutY="130.0" promptText="Insira o seu nome" />
+      <Text layoutX="60.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
          <font>
             <Font size="17.0" />
          </font>
       </Text>
-      <Label fx:id="lblResultado" layoutX="66.0" layoutY="500.0" prefHeight="36.0" prefWidth="119.0" text="Resultado:">
+      <Label fx:id="lblResultado" layoutY="441.0" prefHeight="159.0" prefWidth="300.0">
          <font>
             <Font size="17.0" />
          </font>
       </Label>
-      <Button fx:id="btnCalcularIMC" layoutX="95.0" layoutY="423.0" mnemonicParsing="false" text="Calcular IMC">
+      <Button fx:id="btnCalcularIMC" layoutX="95.0" layoutY="381.0" mnemonicParsing="false" onAction="#calcularIMC" text="Calcular IMC">
          <font>
             <Font size="16.0" />
          </font>
