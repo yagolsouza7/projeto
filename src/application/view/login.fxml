@@ -18,20 +18,25 @@
          <font>
             <Font size="20.0" />
          </font></Label>
-      <ImageView fitHeight="487.0" fitWidth="400.0" layoutY="4.0">
+      <ImageView fitHeight="502.0" fitWidth="406.0" layoutX="-5.0" layoutY="-4.0">
          <image>
-            <Image url="@../../../../../Downloads/bora.jpg" />
+            <Image url="@../../../../../Downloads/imgFundo1.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="73.0" layoutY="256.0" text="Senha" textFill="RED">
+      <Label layoutX="84.0" layoutY="256.0" text="Senha" textFill="RED">
          <font>
             <Font size="20.0" />
          </font></Label>
-      <PasswordField fx:id="senha" layoutX="84.0" layoutY="287.0" promptText="Insira a senha" text="admin" />
-      <TextField fx:id="usuario" layoutX="84.0" layoutY="204.0" promptText="Insira o usuário" text="douglas" />
+      <PasswordField fx:id="senha" layoutX="84.0" layoutY="287.0" promptText="Insira a senha" />
+      <TextField fx:id="usuario" layoutX="84.0" layoutY="204.0" promptText="Insira o usuário" />
     <Button fx:id="entrar" layoutX="125.0" layoutY="378.0" mnemonicParsing="false" onAction="#entrar" text="Entrar" />
     <Button fx:id="sair" layoutX="238.0" layoutY="378.0" mnemonicParsing="false" onAction="#sair" text="Sair" />
       <Label fx:id="lblNovoUsuario" layoutX="152.0" layoutY="440.0" text="Criar Conta" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="173.0" text="Usuário" textFill="RED">
          <font>
             <Font size="20.0" />
          </font>

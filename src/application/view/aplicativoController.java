@@ -64,6 +64,11 @@ public class aplicativoController {
     	carregarTela("contadorDeIdade.fxml");
     }
     
+    @FXML
+    private void abrirCarro() {
+    	carregarTela("carros.fxml");
+    }
+
 	@FXML
 	private void initialize() {
 		//abrirPaginaInicial();
